@@ -76,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
                 Log.e(TAG, "downloadXML: Invalid URL " + e.getMessage());
             } catch (IOException e) {
                 Log.e(TAG, "downloadXML: IO Exception: "+ e.getMessage() );
+            } catch (SecurityException e) {
+                Log.e(TAG, "downloadXML: Security Exception. Need permission?" + e.getMessage() );
+                e.printStackTrace();
             }
 
             return null;

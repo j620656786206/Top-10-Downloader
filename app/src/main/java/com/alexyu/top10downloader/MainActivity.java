@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.e(TAG, "downloadXML: IO Exception: "+ e.getMessage() );
             } catch (SecurityException e) {
                 Log.e(TAG, "downloadXML: Security Exception. Need permission?" + e.getMessage() );
-                e.printStackTrace();
+//                e.printStackTrace();
             }
 
             return null;

@@ -13,4 +13,8 @@ public class ParseApplications {
     public ParseApplications() {
         this.applications = new ArrayList<>();
     }
+
+    public ArrayList<FeedEntry> getApplications() {
+        return applications;
+    }
 }

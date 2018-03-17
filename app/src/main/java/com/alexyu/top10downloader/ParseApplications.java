@@ -76,10 +76,15 @@ public class ParseApplications {
                 }
                 eventType = xpp.next();
             }
+            for(FeedEntry app: applications) {
+                Log.d(TAG, "*************");
+                Log.d(TAG, app.toString());
+            }
 
         } catch (Exception e) {
             status = false;
             e.printStackTrace();
         }
+        return status;
     }
 }
